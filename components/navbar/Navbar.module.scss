@@ -1,0 +1,48 @@
+@import '../../styles/variable.module.scss';
+
+.root {
+  max-width: 1170px;
+  margin: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  li {
+    color: $grey1-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .active {
+    color: $black-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.icon {
+  width: 18px;
+  height: 4px;
+  margin: 6px auto 0;
+
+  border-radius: 30px;
+  background: $primary-color;
+}
+
+.auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
