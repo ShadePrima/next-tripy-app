@@ -7,6 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 425px) {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .nav {
@@ -14,8 +20,15 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 
-  li {
+  @media (max-width: 425px) {
+    gap: 20px;
+  }
+
+  .disabled {
+    padding-top: 10px;
+
     color: $grey1-color;
     font-size: 20px;
     font-style: normal;
@@ -24,6 +37,8 @@
   }
 
   .active {
+    padding-top: 10px;
+
     color: $black-color;
     font-size: 20px;
     font-style: normal;
@@ -38,6 +53,15 @@
   margin: 6px auto 0;
 
   border-radius: 30px;
+  background: $white-color;
+}
+
+.iconActive {
+  width: 18px;
+  height: 4px;
+  margin: 6px auto 0;
+
+  border-radius: 30px;
   background: $primary-color;
 }
 
@@ -45,4 +69,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
+
+  .login {
+    color: $grey1-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .register {
+    width: 122px;
+    height: 60px;
+
+    border-radius: 45px;
+    background: $primary-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $white-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 }
