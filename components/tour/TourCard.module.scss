@@ -1,0 +1,21 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+  margin-top: 80px;
+  max-width: 370px;
+  min-height: 500px;
+  background: $white-color;
+  border-radius: 0 0 16px 16px;
+}
+
+.content {
+  padding: 20px 25px 30px;
+}
+
+.title {
+  color: $black-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 132%;
+}

@@ -21,3 +21,21 @@ $background: #f5f4f4;
   align-items: center;
   flex-wrap: wrap;
 }
+
+@mixin titleRed() {
+  color: $primary-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+@mixin mainTitle() {
+  color: $black-color;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
