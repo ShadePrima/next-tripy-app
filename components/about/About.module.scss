@@ -1,0 +1,79 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+  padding-top: 120px;
+  background: $background;
+}
+
+.container {
+  @include flexBetween;
+
+  max-width: 1172px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: 1067px) {
+    justify-content: center;
+  }
+}
+
+.content {
+  max-width: 472px;
+  min-height: 369px;
+}
+
+.title {
+  color: $primary-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.titleMain {
+  color: $black-color;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  max-width: 442px;
+  margin-top: 24px;
+
+  color: $grey1-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.numberContainer {
+  @include flexBetween;
+}
+
+.numbers {
+  margin-top: 24px;
+  max-width: 100px;
+
+  .number {
+    color: $primary-color;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .numbersText {
+    color: $grey1-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-align: start;
+  }
+}

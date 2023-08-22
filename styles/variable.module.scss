@@ -5,7 +5,7 @@ $primary-color: #e61c5d;
 $white-color: #ffffff;
 
 //background
-$background: #fdfdfd;
+$background: #f5f4f4;
 
 //mixins
 
@@ -13,4 +13,11 @@ $background: #fdfdfd;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flexBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
