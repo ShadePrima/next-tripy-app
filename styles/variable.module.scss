@@ -3,3 +3,14 @@ $black-color: #112b3c;
 $grey1-color: #808080;
 $primary-color: #e61c5d;
 $white-color: #ffffff;
+
+//background
+$background: #fdfdfd;
+
+//mixins
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

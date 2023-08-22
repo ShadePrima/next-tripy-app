@@ -2,7 +2,7 @@
 
 .root {
   max-width: 1170px;
-  margin: 20px 0;
+  margin: 20px auto;
 
   display: flex;
   justify-content: space-between;
@@ -24,6 +24,7 @@
 
   @media (max-width: 425px) {
     gap: 20px;
+    padding: 0 15px;
   }
 
   .disabled {
