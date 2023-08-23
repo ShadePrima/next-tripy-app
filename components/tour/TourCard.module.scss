@@ -12,10 +12,49 @@
   padding: 20px 25px 30px;
 }
 
+.priceContainer {
+  margin-top: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title {
   color: $black-color;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  line-height: 132%;
+}
+
+.text {
+  margin-top: 8px;
+
+  color: $black-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icon {
+  margin-top: 8px;
+}
+
+.price {
+  color: $primary-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 132%;
+}
+
+.term {
+  color: $grey1-color;
+  font-family: Barlow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 132%;
 }

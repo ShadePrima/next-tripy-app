@@ -1,22 +1,29 @@
 import React from 'react'
 import styles from './TourCard.module.scss'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
-import image from '../../assets/images/tour1.png'
+import icon from '../../assets/icons/tour-icon.svg'
 
-const TourCard = () => {
+type TourCardProps = {
+  image: StaticImageData
+  title: string
+  place: string
+  price: string
+  term: string
+}
+
+const TourCard = ({ image, title, place, price, term }: TourCardProps) => {
   return (
     <div className={styles.main}>
       <Image src={image} alt='image' />
 
       <div className={styles.content}>
-        <h2 className={styles.title}>
-          Fall in love among the winding streets and snow-covered
-        </h2>
-        <p className={styles.text}>Prague, Czechia</p>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.text}>{place}</p>
+        <Image className={styles.icon} src={icon} alt='icon' />
         <div className={styles.priceContainer}>
-          <div className={styles.prise}>500$</div>
-          <p className={styles.term}>10 days tour</p>
+          <div className={styles.price}>{price}</div>
+          <p className={styles.term}>{term}</p>
         </div>
       </div>
     </div>
