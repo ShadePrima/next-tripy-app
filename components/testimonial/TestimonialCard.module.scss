@@ -1,1 +1,58 @@
 @import '../../styles/variable.module.scss';
+
+.main {
+  max-width: 302px;
+  min-height: 350px;
+  background: $white-color;
+  border-radius: 16px;
+  border: 1px solid $grey2-color;
+}
+
+.wrapper {
+  padding: 46px 37px 42px 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+}
+
+.name {
+  margin-top: 12px;
+
+  color: $black-color;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.job {
+  margin-top: 4px;
+
+  color: $black-color;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rating {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.description {
+  margin-top: 12px;
+  width: 224px;
+
+  color: $black-color;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%;
+}
