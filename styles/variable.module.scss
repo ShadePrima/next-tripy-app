@@ -41,3 +41,22 @@ $background: #f5f4f4;
   font-weight: 700;
   line-height: normal;
 }
+
+@mixin footerTitle {
+  color: $black-color;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin footerText {
+  margin-top: 18px;
+
+  color: $black-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}

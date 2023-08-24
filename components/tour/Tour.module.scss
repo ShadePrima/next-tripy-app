@@ -13,11 +13,19 @@
 
 .title {
   @include titleRed;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .mainTitle {
   max-width: 591px;
   @include mainTitle;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
 }
 
 .tourContainer {
@@ -26,4 +34,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+
+  @media (max-width: 780px) {
+    justify-content: center;
+  }
 }

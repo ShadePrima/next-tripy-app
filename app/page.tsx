@@ -1,5 +1,5 @@
 import styles from './page.module.scss'
-import { About, Header, Navbar, Testimonial, Tour } from '@/components'
+import { About, Footer, Header, Navbar, Testimonial, Tour } from '@/components'
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <About />
       <Tour />
       <Testimonial />
+      <Footer />
     </main>
   )
 }
