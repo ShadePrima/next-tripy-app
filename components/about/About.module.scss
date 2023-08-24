@@ -52,12 +52,15 @@
 }
 
 .numberContainer {
-  @include flexBetween;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
 }
 
 .numbers {
   margin-top: 24px;
-  max-width: 100px;
+  max-width: 94px;
 
   .number {
     color: $primary-color;

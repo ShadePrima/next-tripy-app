@@ -1,0 +1,19 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+  padding-top: 120px;
+  background: $background;
+}
+
+.title {
+  @include titleRed;
+  text-align: center;
+}
+
+.mainTitle {
+  max-width: 591px;
+  margin: 0 auto;
+
+  @include mainTitle;
+  text-align: center;
+}
